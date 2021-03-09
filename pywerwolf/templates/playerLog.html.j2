@@ -1,0 +1,14 @@
+<p class='normal'>
+  <input type='submit' value='Log anzeigen/verbergen' onClick='showHidePlayerLog();' />
+</p>
+<form id='PlayerLog' style='display: none;'>
+  <p id='normal'>
+{%for l in player.log%}
+{{l}}
+{%endfor%}
+  </p>
+</form>
+
+<!-- 
+    vim:ft=html :
+-->
